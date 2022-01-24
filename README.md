@@ -13,7 +13,7 @@ Technologies used:
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
-Run the followed commands:
+Run the following commands:
 
 ## Install dependencies:
 ``` bash

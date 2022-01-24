@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import Experience from "../Experience";
-import { meshRotationSpeed, objectDistance } from "../utils/constants";
+import { meshRotationSpeed, objectDistance } from "../utils/Constants";
 import gsap from "gsap";
 
 
