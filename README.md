@@ -1,3 +1,4 @@
+[Quick preview](https://61eedfb7f85e6e428724e376--scroll-based-animation-template.netlify.app/)
 
 A simple portfolio web template with scrolling animation. 
 Clone the repo and modify it for you own needs (change the geometries, colors, add more description etc...).  
