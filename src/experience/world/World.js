@@ -9,7 +9,6 @@ export default class World {
     this.experience = new Experience();
     this.scene = this.experience.scene;
     this.resources = this.experience.resources;
-
     this.resources.on('progress', (event) => {
       console.log(event)
       // Add a progress component

@@ -53,14 +53,13 @@ export default class SectionMeshes {
       this.material,
     );
 
-    console.log(window.innerWidth)
     this.mesh1.position.y = -objectDistance * 0;
     this.mesh2.position.y = -objectDistance * 1;
     this.mesh3.position.y = -objectDistance * 2;
 
-    this.mesh1.position.x = 2;
-    this.mesh2.position.x = -2;
-    this.mesh3.position.x = 2;
+    this.mesh1.position.x = this.sizes.isMobile ? 0 :2;
+    this.mesh2.position.x = this.sizes.isMobile ? 0 : -2;
+    this.mesh3.position.x = this.sizes.isMobile ? 0 :2;
     this.items = [this.mesh1, this.mesh2, this.mesh3]
     this.scene.add(this.mesh1, this.mesh2, this.mesh3);
 
@@ -71,7 +70,6 @@ export default class SectionMeshes {
     for (let i = 0; i < this.items.length; i++) {
       this.startPositions[i] = this.items[i].position.x;
       i % 2 === 0 ? this.items[i].position.x += 5 : this.items[i].position.x -= 5;
-
 
     }
   }

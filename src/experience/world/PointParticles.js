@@ -9,6 +9,7 @@ export default class PointParticles {
     window.dispatchEvent(new Event('scroll'))
     this.experience = new Experience();
     this.scene = this.experience.scene;
+    this.sizes = this.experience.sizes;
     this.time = this.experience.time;
     this.resources = this.experience.resources;
 
@@ -18,7 +19,7 @@ export default class PointParticles {
   setInstance() {
 
     this.particleGeometry = new THREE.BufferGeometry();
-    this.totalPoints = 1000;
+    this.totalPoints = this.sizes.isMobile ? 400 : 1000;
     this.radius = 9;
 
     const positions = new Float32Array(this.totalPoints * 3);
